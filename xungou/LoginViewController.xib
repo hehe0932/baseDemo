@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="passwordTF" destination="QUE-ft-EgG" id="a1j-5r-a6h"/>
+                <outlet property="phoneTF" destination="N7c-RC-xJ4" id="wKx-Yr-p0c"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSU-7C-S8L">
+                    <rect key="frame" x="87.5" y="494" width="200" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="登录" backgroundImage="login_btn"/>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="M1Q-vk-DHy"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red-宠物狗" translatesAutoresizingMaskIntoConstraints="NO" id="eay-qn-sED">
+                    <rect key="frame" x="87.5" y="50" width="200" height="200"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7c-RC-xJ4" customClass="UIextField">
+                    <rect key="frame" x="31.5" y="300" width="312" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="312" id="V1g-o5-0JL"/>
+                        <constraint firstAttribute="height" constant="48" id="kby-NK-Ta5"/>
+                    </constraints>
+                    <color key="textColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="login_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="K3x-Lh-hNt">
+                    <rect key="frame" x="0.0" y="634.5" width="375" height="32.5"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUE-ft-EgG">
+                    <rect key="frame" x="31.5" y="370" width="312" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="8KK-t8-v6a"/>
+                        <constraint firstAttribute="width" constant="312" id="rea-ih-cPk"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYX-x0-OwY">
+                    <rect key="frame" x="297.5" y="433" width="46" height="30"/>
+                    <state key="normal" title="去注册"/>
+                    <connections>
+                        <action selector="gotoRegister:" destination="-1" eventType="touchUpInside" id="Buo-xv-jLs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eay-qn-sED" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="8aq-7c-N7Z"/>
+                <constraint firstItem="N7c-RC-xJ4" firstAttribute="top" secondItem="eay-qn-sED" secondAttribute="bottom" constant="50" id="CI7-4r-mfc"/>
+                <constraint firstItem="QUE-ft-EgG" firstAttribute="centerX" secondItem="eay-qn-sED" secondAttribute="centerX" id="Doz-1S-Tth"/>
+                <constraint firstItem="YSU-7C-S8L" firstAttribute="top" secondItem="QUE-ft-EgG" secondAttribute="bottom" constant="76" id="WHi-D0-enU"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="K3x-Lh-hNt" secondAttribute="bottom" id="XM3-hC-2tB"/>
+                <constraint firstAttribute="trailing" secondItem="K3x-Lh-hNt" secondAttribute="trailing" id="YwX-Fs-hgQ"/>
+                <constraint firstItem="K3x-Lh-hNt" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="dlF-C0-xbH"/>
+                <constraint firstItem="MYX-x0-OwY" firstAttribute="trailing" secondItem="QUE-ft-EgG" secondAttribute="trailing" id="e5X-I7-i56"/>
+                <constraint firstItem="N7c-RC-xJ4" firstAttribute="centerX" secondItem="eay-qn-sED" secondAttribute="centerX" id="eEM-M7-3u6"/>
+                <constraint firstItem="MYX-x0-OwY" firstAttribute="top" secondItem="QUE-ft-EgG" secondAttribute="bottom" constant="15" id="fLA-YB-ErY"/>
+                <constraint firstItem="YSU-7C-S8L" firstAttribute="centerX" secondItem="eay-qn-sED" secondAttribute="centerX" id="mcV-6f-MSl"/>
+                <constraint firstItem="QUE-ft-EgG" firstAttribute="top" secondItem="N7c-RC-xJ4" secondAttribute="bottom" constant="22" id="rQf-yj-Of2"/>
+                <constraint firstItem="eay-qn-sED" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="v1B-57-SHv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bottom" width="375" height="32.5"/>
+        <image name="login_btn" width="200" height="43"/>
+        <image name="red-宠物狗" width="200" height="200"/>
+    </resources>
+</document>

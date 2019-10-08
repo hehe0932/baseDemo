@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="phoneTF" destination="alV-ll-0Tb" id="GBF-9W-Epq"/>
+                <outlet property="pwdTF" destination="tTB-Zr-CrU" id="upr-y7-ELN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkB-rH-A4R">
+                    <rect key="frame" x="107" y="538" width="200" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="注册" backgroundImage="login_btn"/>
+                    <connections>
+                        <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="oU5-EC-mfG"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red-宠物狗" translatesAutoresizingMaskIntoConstraints="NO" id="oFd-K4-H3Q">
+                    <rect key="frame" x="107" y="94" width="200" height="200"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alV-ll-0Tb">
+                    <rect key="frame" x="51" y="344" width="312" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="312" id="hWH-d0-hd8"/>
+                        <constraint firstAttribute="height" constant="48" id="yGM-tn-y6q"/>
+                    </constraints>
+                    <color key="textColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tTB-Zr-CrU">
+                    <rect key="frame" x="51" y="414" width="312" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="312" id="VhT-iq-Qli"/>
+                        <constraint firstAttribute="height" constant="48" id="dKf-FY-0PV"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bes-Ub-L5Y">
+                    <rect key="frame" x="317" y="477" width="46" height="30"/>
+                    <state key="normal" title="去登录"/>
+                    <connections>
+                        <action selector="gotoLogin:" destination="-1" eventType="touchUpInside" id="xri-kh-Psw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tkB-rH-A4R" firstAttribute="top" secondItem="tTB-Zr-CrU" secondAttribute="bottom" constant="76" id="DSB-R9-P8b"/>
+                <constraint firstItem="Bes-Ub-L5Y" firstAttribute="top" secondItem="tTB-Zr-CrU" secondAttribute="bottom" constant="15" id="Jgk-CN-80P"/>
+                <constraint firstItem="tkB-rH-A4R" firstAttribute="centerX" secondItem="oFd-K4-H3Q" secondAttribute="centerX" id="KAz-CC-inM"/>
+                <constraint firstItem="tTB-Zr-CrU" firstAttribute="top" secondItem="alV-ll-0Tb" secondAttribute="bottom" constant="22" id="Ryu-A3-jW9"/>
+                <constraint firstItem="tTB-Zr-CrU" firstAttribute="centerX" secondItem="oFd-K4-H3Q" secondAttribute="centerX" id="UTD-Zp-thy"/>
+                <constraint firstItem="alV-ll-0Tb" firstAttribute="centerX" secondItem="oFd-K4-H3Q" secondAttribute="centerX" id="YIY-6x-Odo"/>
+                <constraint firstItem="Bes-Ub-L5Y" firstAttribute="trailing" secondItem="tTB-Zr-CrU" secondAttribute="trailing" id="YWN-tk-bWV"/>
+                <constraint firstItem="oFd-K4-H3Q" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="bVY-IL-vos"/>
+                <constraint firstItem="alV-ll-0Tb" firstAttribute="top" secondItem="oFd-K4-H3Q" secondAttribute="bottom" constant="50" id="sio-eu-ktg"/>
+                <constraint firstItem="oFd-K4-H3Q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zu5-EB-O4a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_btn" width="200" height="43"/>
+        <image name="red-宠物狗" width="200" height="200"/>
+    </resources>
+</document>
